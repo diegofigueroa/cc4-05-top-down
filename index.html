@@ -214,10 +214,6 @@
 		                                  |
 		                                  T
 	  </pre>
-	  <ul class="red build">
-	    <li>¿ int hace match con ( ?</li>
-	    <li>¡NO!</li>
-	  </ul>
 	</article>
       </slide>
       
@@ -313,10 +309,6 @@
 		                               /  |  \
 		                              (   E   ) 
 	  </pre>
-	  <ul class="build">
-	    <li class="red">¿ <b>(</b> hace match con <b>(</b> ?</li>
-	    <li class="green">¡SI!</li>
-	  </ul>
 	</article>
       </slide>
       
@@ -805,7 +797,7 @@ T -> int | int * T | ( E )
           <pre>E -> T E'
 E' -> + E | &epsilon;
 
-T -> int | ( E )
+T -> int T' ( E )
 T' -> * T | &epsilon;
 </pre>
         </article>
